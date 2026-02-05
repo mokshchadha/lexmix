@@ -93,7 +93,7 @@ _Source: Landing Page_
     return {
       success: false,
       error: 'Submission Failed',
-      message: 'Something went wrong. Please try again later.',
+      message: String(error),
     }
   }
 }
