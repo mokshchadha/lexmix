@@ -25,7 +25,7 @@ export async function sendTelegramMessage({ email, name, phone }: TelegramMessag
   }
 
   const message = `
-🚀 *New Project Inquiry*
+⚖️ *waitlist update*
 
 📧 *Email:* ${email || 'Not provided'}
 👤 *Name:* ${name || 'Not provided'}
