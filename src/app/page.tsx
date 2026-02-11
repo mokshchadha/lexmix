@@ -11,7 +11,7 @@ export default function Home() {
         <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link href="/" className="flex items-center gap-2">
             <Scale className="h-6 w-6" />
-            <span className="font-serif text-xl font-bold tracking-tight">Lexshadi</span>
+            <span className="font-serif text-xl font-bold tracking-tight">Lex Match</span>
           </Link>
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-600 dark:text-zinc-400">
             <Link href="#problem" className="hover:text-black dark:hover:text-white transition-colors">The Problem</Link>
@@ -69,7 +69,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-semibold mb-3">The Trust Deficit</h3>
                 <p className="text-zinc-600 dark:text-zinc-400">
-                  Generic apps are saturated with unverified profiles. Privacy is a luxury most platforms cannot afford.
+                  Generic apps are saturated with unverified profiles. Seggregation based on income, match with a partner that matches your income tax return!
                 </p>
               </div>
             </div>
@@ -82,7 +82,7 @@ export default function Home() {
             <div className="grid gap-16 lg:grid-cols-2 items-center">
               <div>
                 <h2 className="font-serif text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl mb-6">
-                  A Vertically Integrated Ecosystem
+                  Lex Match where law meets love
                 </h2>
                 <div className="space-y-8">
                   <div className="flex gap-4">
@@ -94,7 +94,7 @@ export default function Home() {
                     <div>
                       <h3 className="text-lg font-semibold mb-2">Strict Curation</h3>
                       <p className="text-zinc-600 dark:text-zinc-400">
-                        Every profile vetted via Bar Council registration and degrees from verified NLUs and traditional universities.
+                        The "Bar" for entry : every profile vetted via Bar Council registration and degrees from verified NLUs and traditional universities.
                       </p>
                     </div>
                   </div>
@@ -122,7 +122,7 @@ export default function Home() {
                     <div>
                       <h3 className="text-lg font-semibold mb-2">Privacy First</h3>
                       <p className="text-zinc-600 dark:text-zinc-400">
-                        Advanced controls to hide profiles from specific firms or seniors. Your reputation is safe here.
+                        Privacy is a luxury most platforms cannot afford. Advanced controls to hide profiles from specific firms or seniors. Your reputation is safe here.
                       </p>
                     </div>
                   </div>
@@ -155,6 +155,7 @@ export default function Home() {
                 </h2>
                 <p className="text-lg text-zinc-400 mb-8">
                   We are currently accepting early access requests. Join the waitlist to be notified when membership opens for your jurisdiction.
+                  From Sole Proprietorship to a Partnership for life.
                 </p>
                 <div className="flex flex-col gap-4 text-sm text-zinc-500">
                   <div className="flex items-center gap-2">
@@ -177,7 +178,7 @@ export default function Home() {
 
       <footer className="border-t border-black/5 bg-white py-12 dark:border-white/10 dark:bg-black">
         <div className="container mx-auto px-4 text-center text-sm text-zinc-500">
-          <p>&copy; {new Date().getFullYear()} Lexshadi. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Lex Match. All rights reserved.</p>
           <div className="mt-4 flex justify-center gap-6">
             <Link href="#" className="hover:text-black dark:hover:text-white">Privacy Policy</Link>
             <Link href="#" className="hover:text-black dark:hover:text-white">Terms of Service</Link>

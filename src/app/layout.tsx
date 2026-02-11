@@ -15,7 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Lexshadi | Exclusive Legal Matchmaking",
+  title: "Lex Match| Exclusive Legal Matchmaking",
   description: "The premium matchmaking ecosystem for verified legal professionals.",
 };
 

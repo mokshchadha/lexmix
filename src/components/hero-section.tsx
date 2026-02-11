@@ -60,8 +60,7 @@ export function HeroSection() {
             className="mx-auto max-w-2xl text-lg text-zinc-600 dark:text-zinc-400 mb-10"
           >
             The first vertically integrated ecosystem designed exclusively for
-            verified lawyers, judges, and legal scholars. Find a partner who
-            understands the sidebar.
+            verified lawyers, judges, and legal scholars.
           </motion.p>
           <motion.div
             variants={itemVariants}
@@ -80,7 +79,7 @@ export function HeroSection() {
               href="#problem"
               className="w-full sm:w-auto inline-flex items-center justify-center rounded-lg border border-black/10 bg-white px-8 py-4 text-base font-semibold text-zinc-900 shadow-sm transition-all hover:bg-zinc-50 dark:border-white/10 dark:bg-black dark:text-zinc-100 dark:hover:bg-zinc-900"
             >
-              Why Lexshadi?
+              Why Lex Match?
             </Link>
           </motion.div>
         </motion.div>
