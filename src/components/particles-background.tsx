@@ -27,7 +27,8 @@ export function ParticlesBackground() {
       dx: number
       dy: number
       size: number
-      color: string
+      emoji: string
+      opacity: number
       density: number
 
       constructor(x: number, y: number, canvas: HTMLCanvasElement) {
@@ -36,16 +37,18 @@ export function ParticlesBackground() {
         // Random velocity between -0.5 and 0.5
         this.dx = (Math.random() - 0.5)
         this.dy = (Math.random() - 0.5)
-        this.size = Math.random() * 2 + 1
+        this.size = Math.floor(Math.random() * 10 + 10)
         
         // Determine theme: check 'dark' class on html element OR system preference
         const isDark = document.documentElement.classList.contains('dark') || 
                       (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
 
         if (isDark) {
-             this.color = `rgba(255, 255, 255, ${Math.random() * 0.3 + 0.1})` // White in dark mode, slightly more visible
+             this.emoji = '🤍' // White in dark mode
+             this.opacity = Math.random() * 0.3 + 0.1
         } else {
-             this.color = `rgba(0, 0, 0, ${Math.random() * 0.3 + 0.1})` // Black in light mode, slightly more visible
+             this.emoji = '🖤' // Black in light mode
+             this.opacity = Math.random() * 0.3 + 0.1
         }
         
         this.density = (Math.random() * 30) + 1
@@ -53,10 +56,13 @@ export function ParticlesBackground() {
 
       draw() {
         if (!ctx) return
-        ctx.beginPath()
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false)
-        ctx.fillStyle = this.color
-        ctx.fill()
+        ctx.save()
+        ctx.font = `${this.size}px serif`
+        ctx.textAlign = 'center'
+        ctx.textBaseline = 'middle'
+        ctx.globalAlpha = this.opacity
+        ctx.fillText(this.emoji, this.x, this.y)
+        ctx.restore()
       }
 
       update() {
@@ -98,8 +104,8 @@ export function ParticlesBackground() {
 
     const init = () => {
       particles = []
-      // Number of particles relative to screen size
-      const particleCount = (canvas.width * canvas.height) / 9000
+      // Number of particles relative to screen size (reduced for larger emoji)
+      const particleCount = (canvas.width * canvas.height) / 25000
       for (let i = 0; i < particleCount; i++) {
         let size = (Math.random() * 5) + 1
         let x = (Math.random() * ((canvas.width - size * 2) - (size * 2)) + size * 2)
